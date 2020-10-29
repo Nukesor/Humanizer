@@ -1,0 +1,28 @@
+[package]
+name = "humanizer"
+description = "Take machine input and convert it into human readable form."
+version = "0.0.1-alpha.0"
+authors = ["Arne Beer <contact@arne.beer>"]
+homepage = "https://github.com/nukesor/humanizer"
+repository = "https://github.com/nukesor/humanizer"
+documentation = "https://docs.rs/humanizer/"
+license = "MIT"
+keywords = ["shell", "command", "humanize", "formatting"]
+readme = "README.md"
+edition = "2018"
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[[bin]]
+name = "humanizer"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+chrono = { version = "^0.4", features = ["serde"] }
+chrono-english = "^0.1.0"
+structopt = "0.3"
+
+[dev-dependencies]
+proptest = "^0.10"
