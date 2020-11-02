@@ -3,7 +3,7 @@ use clap::Clap;
 #[derive(Clap, Debug)]
 #[clap(
     name = "Humanizer",
-    about = "Humanize your stuff",
+    about = "Bring your machine output into human readable form",
     author = "Arne Beer <contact@arne.beer>"
 )]
 pub struct CliArguments {
